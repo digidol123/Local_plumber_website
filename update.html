@@ -1,0 +1,153 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Ceredigion Plumbers Collective</title>
+
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+
+<body>
+<script>
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
+
+<input type="submit" 
+       value="+Increase Font Size" 
+       onclick="resizeText(1)" 
+       style="font-size : 21px; width: 100%; height: 38px;" /> 
+       
+       <input type="submit" 
+       value="-Decrease Font Size" 
+       onclick="resizeText(-1)" 
+       style="font-size : 11px; width: 100%; height: 38px;" /> 
+   
+
+   <div class="bg">
+    <!--start container-->
+    <div id="container">
+    <!--start header-->
+    <header>
+
+      <!--start menu-->
+  	   <nav>
+         <ul>
+         
+         <li><a href="index.html">Log out</a></li>
+         </ul>
+      </nav>
+  	   <!--end menu-->
+      <!--end header-->
+	</header>
+   <!--start intro-->
+   <section id="intro">
+      <hgroup>
+      <a class="photo_hover3" href="about.html"><img src="plumber.jpg" width="980" height="100" alt="Services"/></a>
+         
+      </hgroup>
+   </section>
+   <!--end intro-->
+  <div class="holder_content">
+      <section class="group5">
+
+ <h1 class="page-header">Edit my profile</h1>
+
+         
+         
+          <div class="row">
+        <form class="form-horizontal" role="form" action="task.html">
+	<div class="form-group">
+		<label for="name" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+		</div>
+	</div>
+            
+	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Address</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="address" name="address" placeholder="House Name/Number, Street Name, County" value="">
+		</div>
+	</div>
+                
+    
+            
+   	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Contact Telephone</label>
+		<div class="col-sm-10">
+			<input type="text" pattern="[789][0-9]{9}" class="form-control" id="phone" name="phone" placeholder="07777777777" value="">
+		</div>
+	</div>
+    
+    <div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Contact Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+		</div>
+	</div>
+           <div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Qualifications </label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="6" name="Qualifications " placeholder="Add qualifications "></textarea>
+		</div>
+	</div>
+            
+                        
+            <div class="form-group">
+  <label class="col-sm-2 control-label">Availability</label>
+    <label><input type="checkbox" value="">Monday </label>  
+                 <label><input type="checkbox" value="">Tuesday </label> 
+                 <label><input type="checkbox" value="">Wednesday</label> 
+                <label><input type="checkbox" value="">Thursday</label> 
+                                 <label><input type="checkbox" value="">Friday</label>
+                 <label><input type="checkbox" value="">Saturday</label> 
+                <label><input type="checkbox" value="">Sunday</label> 
+</div>
+
+            
+	<div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Languages</label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="7" name="description" placeholder="Languages"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Personal description </label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="8" name="description" placeholder="Full description for personal page"></textarea>
+		</div>
+	</div>
+<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<input id="submit" name="submit" type="submit" value="Update" onclick="update()" class="btn btn-primary">
+<script>
+function update() {
+    alert("Profile updated successfully.");
+	
+}
+</script>
+
+		</div>
+	</div>
+            
+</form>
+      </div><!-- /.row -->
+
+
+
+
+    
+
+
+   
+  </body>
+</html>

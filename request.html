@@ -1,0 +1,177 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Ceredigion Plumbers Collective</title>
+
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+
+<body >
+<script>
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
+
+<input type="submit" 
+       value="+Increase Font Size" 
+       onclick="resizeText(1)" 
+       style="font-size : 21px; width: 100%; height: 38px;" /> 
+       
+       <input type="submit" 
+       value="-Decrease Font Size" 
+       onclick="resizeText(-1)" 
+       style="font-size : 11px; width: 100%; height: 38px;" /> 
+   
+   
+
+   <div class="bg">
+    <!--start container-->
+    <div id="container">
+    <!--start header-->
+    <header>
+
+      <!--start menu-->
+  	   <nav>
+         <ul>
+         <li><a href="index.html" class="current">Home</a></li>
+         <li><a href="about.html">About</a></li>
+     	   <li><a href="team.html">Our team</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="log.html">Admin Log in</a></li>
+         </ul>
+      </nav>
+  	   <!--end menu-->
+      <!--end header-->
+	</header>
+   <!--start intro-->
+   <section id="intro">
+      <hgroup>
+      <a class="photo_hover3" href="about.html"><img src="plumber.jpg" width="980" height="100" alt="Services"/></a>
+         
+      </hgroup>
+   </section>
+   <!--end intro-->
+  <div class="holder_content">
+      <section class="group5">
+<h1>Submit a request</h1>
+ <p>Fill in the form below to submit a request to the plumbers in our collective. 
+ We will reply to you within 2 working days.
+  You can check out <a href="team.html" style="color: #CC0000"> Our team </a> page to choose a plumber or we will you send a plumber who is avaliable. Our Emergencies line is: 0123456789</p>
+      
+	 
+
+      
+       
+<hr width=100% align=left>
+
+          
+        <form class="form-horizontal" role="form" action="request.html">
+	<div class="form-group">
+		<label for="name" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+		</div>
+	</div>
+            
+	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Address</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="address" name="address" placeholder="House Name/Number, Street Name, County" value="">
+		</div>
+	</div>
+                
+    <div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Postcode</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" value="">
+		</div>
+	</div>
+            
+   	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Contact Telephone</label>
+		<div class="col-sm-10">
+			<input type="text" pattern="[789][0-9]{9}" class="form-control" id="phone" name="phone" placeholder="07777777777" value="">
+		</div>
+	</div>
+    
+    <div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Contact Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+		</div>
+	</div>
+       
+   	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Desired Job Start Date</label>
+		<div class="col-sm-10">
+			<input type="date" class="form-control" id="jobstart" name="jobstart" placeholder="dd-mm-yyyy" value="">
+		</div>
+	</div>
+            
+	<div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Job Description</label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="6" name="description"></textarea>
+		</div>
+	</div>
+            
+			<div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Please specify which plumber do you want to see (optional)</label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="7" name="who"></textarea>
+		</div>
+	</div>
+            
+	<div class="form-group">
+		<label for="human" class="col-sm-2 control-label">Please type in Captcha</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+		</div>
+	</div>
+            
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<input id="submit" name="submit" type="submit" value="Send" onclick="send()" class="btn btn-primary">
+<script>
+function send() {
+    alert("Request form sent! We will you within 2 working days.");
+}
+</script>
+		</div>
+	</div>
+</form>
+      </div><!-- /.row -->
+
+    
+
+
+   <!--start holder-->
+   <div class="holder_content">
+      <section class="group4">
+         <h3>Disclaimer</h3>
+		
+         <p>Please note that this is not a real website. </p>
+   </div>
+   <!--end holder-->
+   </div>
+   <!--end container-->
+   <!--start footer-->
+   <footer>
+      <div class="container">  
+         <div id="FooterTwo"> Ceredigion Plumbers Collective, 2016</div>
+         <div id="FooterTree"> 100 Queen St, Aberystwyth, SY23 1QQ, Ph:01970 123456</div> 
+      </div>
+   </footer>
+   <!--end footer-->
+   </div>
+   
+  </body>
+</html>

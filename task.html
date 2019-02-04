@@ -1,0 +1,351 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Ceredigion Plumbers Collective</title>
+
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+
+<body>
+<script>
+function resizeText(multiplier) {
+  if (document.body.style.fontSize == "") {
+    document.body.style.fontSize = "1.0em";
+  }
+  document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
+}
+</script>
+
+<input type="submit" 
+       value="+Increase Font Size" 
+       onclick="resizeText(1)" 
+       style="font-size : 21px; width: 100%; height: 38px;" /> 
+       
+       <input type="submit" 
+       value="-Decrease Font Size" 
+       onclick="resizeText(-1)" 
+       style="font-size : 11px; width: 100%; height: 38px;" /> 
+   
+   
+   <div class="bg">
+    <!--start container-->
+    <div id="container">
+    <!--start header-->
+    <header>
+
+     <!--start menu-->
+  	   <nav>
+         <ul>
+         
+         <li><a href="index.html">Log out</a></li>
+         </ul>
+      </nav>
+  	   <!--end menu-->
+      <!--end header-->
+	</header>
+   <!--start intro-->
+   <section id="intro">
+      <hgroup>
+      <a class="photo_hover3" href="about.html"><img src="plumber.jpg" width="980" height="100" alt="Services"/></a>
+         
+      </hgroup>
+   </section>
+   <!--end intro-->
+  <div class="holder_content">
+      <section class="group5">
+  <h1>Welcome back team member</h1>
+  Below is a list of requests you have received. You can also edit your personal webpage <a href="update.html" style="color: #CC0000"> Here </a> <br>
+
+
+<br>
+<hr width=100% align=left>
+<br>
+        <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <em style="color: #CC0000" >NEW Request from:
+		</em> David Smith <span class="label label-default" ></span></a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body"><dl class="dl-horizontal">
+  <dt>Name</dt>
+  <dd>Mr David Smith </dd>
+            <dt>Date Submitted</dt>
+  <dd>23/04/2016</dd>
+               <dt>Address</dt>
+  <dd>100 Castle St, Aberystwyth, Ceredigion</dd>
+               <dt>Postcode</dt>
+  <dd>SY23 1AB</dd>
+               <dt>Contact Telephone</dt>
+  <dd>012345689</dd>
+               <dt>Contact Email</dt>
+  <dd>davesmith@hotmail.com</dd>
+               <dt>Desired Job Start Date</dt>
+  <dd>05/05/2016</dd>
+               <dt>Job Description</dt>
+  <dd>  Hello CPC, my boiler for my bath had broken. I would be grateful if you could send someone here for a check? I am mostly free between 6am to 9am everyday. Thank you.</dd>
+</dl></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Edit Request</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        <dl>
+        <dl>     
+             <a class="btn btn-default" onclick="completedFunction()" role="button">Accept this request &raquo;</a>  
+            <a class="btn btn-default"  role="button" onclick="deletionFunction()">Delete this request &raquo;</a>
+            <br />
+            
+            <p id="deletion" class="bg-success"></p>
+             <p id="completed" class="bg-success"></p>
+
+
+
+<script>
+function deletionFunction() {
+    var reasonDeletion = prompt("Please enter reason for deletion", "Reason");
+    
+    if (reasonDeletion != null) {
+        document.getElementById("deletion").innerHTML =
+        "";
+    }
+}
+</script>
+
+             <script>
+function completedFunction() {
+    var reasonCompleted = prompt("You have accepted this task");
+    
+    if (reasonCompleted != null) {
+        document.getElementById("completed").innerHTML =
+        "";
+    }
+}
+</script>
+</dl>
+        </dl>
+        
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+ 
+
+<hr width=100% align=left>
+<br>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <em style="color: #CC0000" >NEW Request from:
+		</em> John Spencer <span class="label label-default" ></span></a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body"><dl class="dl-horizontal">
+  <dt>Name</dt>
+  <dd>Mr John Spencer</dd>
+            <dt>Date Submitted</dt>
+  <dd>22/04/2016</dd>
+               <dt>Address</dt>
+  <dd>26 Liverpool St, Aberystwyth, Ceredigion</dd>
+               <dt>Postcode</dt>
+  <dd>SY23 9TD</dd>
+               <dt>Contact Telephone</dt>
+  <dd>012399989</dd>
+               <dt>Contact Email</dt>
+  <dd>johnspencer@gmail.com</dd>
+               <dt>Desired Job Start Date</dt>
+  <dd>08/05/2016</dd>
+               <dt>Job Description</dt>
+  <dd>  Hello CPC, my boiler for my bath had broken. I would be grateful if you could send someone here for a check? I am mostly free between 6am to 9am everyday. Thank you.</dd>
+</dl></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Edit Request</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        <dl>
+        <dl>     
+             <a class="btn btn-default" onclick="completedFunction()" role="button">Accept this request &raquo;</a>  
+            <a class="btn btn-default"  role="button" onclick="deletionFunction()">Delete this request &raquo;</a>
+            <br />
+            
+            <p id="deletion" class="bg-success"></p>
+             <p id="completed" class="bg-success"></p>
+
+
+
+<script>
+function deletionFunction() {
+    var reasonDeletion = prompt("Please enter reason for deletion", "Reason");
+    
+    if (reasonDeletion != null) {
+        document.getElementById("deletion").innerHTML =
+        "";
+    }
+}
+</script>
+
+             <script>
+function completedFunction() {
+    var reasonCompleted = prompt("You have accepted this task");
+    
+    if (reasonCompleted != null) {
+        document.getElementById("completed").innerHTML =
+        "";
+    }
+}
+</script>
+</dl>
+        </dl>
+        
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<hr width=100% align=left>
+<br>
+        <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <em style="color: #CC0000" >NEW Request from:
+		</em> Samantha Rhodes <span class="label label-default" ></span></a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body"><dl class="dl-horizontal">
+  <dt>Name</dt>
+  <dd>Miss Samantha Rhodes </dd>
+            <dt>Date Submitted</dt>
+  <dd>26/04/2016</dd>
+               <dt>Address</dt>
+  <dd>9 seafront St, Aberystwyth, Ceredigion</dd>
+               <dt>Postcode</dt>
+  <dd>SY23 6CE</dd>
+               <dt>Contact Telephone</dt>
+  <dd>012345621</dd>
+               <dt>Contact Email</dt>
+  <dd>samrhodes@outlook.com</dd>
+               <dt>Desired Job Start Date</dt>
+  <dd>09/05/2016</dd>
+               <dt>Job Description</dt>
+  <dd>  Hello CPC, my boiler for my bath had broken. I would be grateful if you could send someone here for a check? I am mostly free between 6am to 9am everyday. Thank you.</dd>
+</dl></div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Edit Request</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+        <dl>
+        <dl>     
+             <a class="btn btn-default" onclick="completedFunction()" role="button">Accept this request &raquo;</a>  
+            <a class="btn btn-default"  role="button" onclick="deletionFunction()">Delete this request &raquo;</a>
+            <br />
+            
+            <p id="deletion" class="bg-success"></p>
+             <p id="completed" class="bg-success"></p>
+
+
+
+<script>
+function deletionFunction() {
+    var reasonDeletion = prompt("Please enter reason for deletion", "Reason");
+    
+    if (reasonDeletion != null) {
+        document.getElementById("deletion").innerHTML =
+        "";
+    }
+}
+</script>
+
+             <script>
+function completedFunction() {
+    var reasonCompleted = prompt("You have accepted this task");
+    
+    if (reasonCompleted != null) {
+        document.getElementById("completed").innerHTML =
+        "";
+    }
+}
+</script>
+</dl>
+        </dl>
+        
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+
+   
+         
+ </section>
+	</div>
+
+   <!--start holder-->
+   <div class="holder_content">
+      <section class="group4">
+         <h3>Disclaimer</h3>
+		
+         <p>Please note that this is not a real website. </p>
+   </div>
+   <!--end holder-->
+   </div>
+   <!--end container-->
+   <!--start footer-->
+   <footer>
+      <div class="container">  
+         <div id="FooterTwo"> Ceredigion Plumbers Collective, 2016</div>
+         <div id="FooterTree"> 100 Queen St, Aberystwyth, SY23 1QQ, Ph:01970 123456</div> 
+      </div>
+   </footer>
+   <!--end footer-->
+   </div>
+   
+  </body>
+</html>

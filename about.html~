@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<title>Ceredigion Plumbers Collective</title>
+
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+
+<body>
+   <div class="bg">
+    <!--start container-->
+    <div id="container">
+    <!--start header-->
+    <header>
+
+    <!--start menu-->
+  	   <nav>
+         <ul>
+         <li><a href="index.html" class="current">Home</a></li>
+         <li><a href="about.html">About</a></li>
+     	   <li><a href="team.html">Our team</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="log.html">Admin Log in</a></li>
+         </ul>
+      </nav>
+  	   <!--end menu-->
+      <!--end header-->
+	</header>
+   <!--start intro-->
+   <section id="intro">
+      <hgroup>
+      <a class="photo_hover3" href="about.html"><img src="plumber.jpg" width="980" height="100" alt="Services"/></a>
+         
+      </hgroup>
+   </section>
+   <!--end intro-->
+   <!--start holder-->
+<div class="holder_content">
+      <section class="group5">
+      
+         <h3>About us</h3>
+         <a class="photo_hover3" href="#"><img src="happy.jpg" width="260" height="214" alt="About us"/></a>
+         <p>Ceredigion Plumbers Collective operates all over Ceredigion, 
+		 but originally started off just operating around Aberystwyth, and our main offices are still located here.
+		We started off as a few local plumbers that decided to combine our 
+		trades in 2015 and now have more than 20 plumbers working throughout Ceredigion 
+		to help grow our business.
+
+		 </p>
+		 <p>
+		 Office contact detais:
+		 <br>
+Phone: 01970 123456
+<br>
+Email: enquiry@ceredigioncollective.co.uk
+<br>
+Address: Ceredigion Plumbing Collective, 100 Queen St, Aberystwyth, SY12 1QQ
+<br>
+Emergencies Line:
+123456789
+		 </p>
+		 <p>
+		 Opening Hours:
+		 
+Monday-Friday: 9:00- 5:00
+<br>
+Saturday & Sundays: Emergency Line Only
+		 </p>
+		 <p>
+		 <!-- Map -->
+<div id="contact" class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6883.163598263116!2d-4.084273841102299!3d52.414544592791835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1460077696854"
+            width="60%" height="140%" frameborder="0" style="border:0"></iframe>
+    <br />
+</div>
+<!-- /Map -->
+
+		 </p>
+		 </section>
+	</div>
+	
+   <!--start holder-->
+   <div class="holder_content">
+      <section class="group4">
+         <h3>Disclaimer</h3>
+		
+         <p>Please note that this is not a real website. </p>
+   </div>
+   <!--end holder-->
+   </div>
+   <!--end container-->
+   <!--start footer-->
+   <footer>
+      <div class="container">  
+         <div id="FooterTwo">© Ceredigion Plumbers Collective, 2016</div>
+         <div id="FooterTree"> 100 Queen St, Aberystwyth, SY23 1QQ, Ph:01970 123456</div> 
+      </div>
+   </footer>
+   <!--end footer-->
+   </div>
+   
+  </body>
+</html>
